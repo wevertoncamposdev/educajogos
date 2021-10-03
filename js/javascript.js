@@ -34,6 +34,7 @@ if (app.el.inputNumber) {
     })
 
     if(app.el.btnReload){
+
         app.el.btnReload.addEventListener('click', (e) => {
             location.reload();
         })

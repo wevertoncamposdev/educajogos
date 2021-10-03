@@ -1,9 +1,10 @@
 *{margin: 0; padding: 0; }
 
 .section-one{
+
     height:50px;
     background-color:rgb(51, 76, 133);
-    color:rgb(216, 240, 251);
+    color:rgb(216, 240, 251)
     
 }
 
@@ -55,6 +56,7 @@ a{
 }
 
 .section-two{
+
     margin-top: 50px;
     height: 60px;
     background-color:rgba(82, 204, 113, 0);
@@ -74,14 +76,18 @@ a{
 }
 
 .section-three{
+
     margin-top: 50px;
     height: 300px;
     background-color:rgba(40, 101, 141, 0);
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns:0.2fr 0.2fr 0.2fr; 
+    grid-template-rows: 1fr; 
+
     align-items: center;
     justify-content: center;
-    text-align: center;
+
 }
 
 .section-four{
@@ -102,8 +108,42 @@ a{
     width: 150px;
     height: 200px;
     background:rgb(103, 137, 216);
-    margin-left: 20px;
-
     text-align: center;
 
+}
+
+@media screen and (max-width: 768px){
+
+    .card-game-one{
+
+        color:white;
+        width: 150px;
+        height: 200px;
+        background:rgb(103, 137, 216);
+        margin-left: auto; margin-right: auto;
+        
+        margin-bottom: 10px;
+    
+    }
+
+    .section-three{
+
+        display: block;
+ 
+    }
+
+    .section-four{
+        display: block;
+        height: 350px;
+        background-color:rgba(185, 224, 208, 0);
+    }
+    
+    .section-five{
+
+        
+        height: 125px;
+        background-color:rgb(51, 76, 133);
+        color:rgb(216, 240, 251);
+    
+    }
 }
