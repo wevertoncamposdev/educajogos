@@ -1,0 +1,48 @@
+*{margin: 0; padding: 0; box-sizing: border-box; }
+
+.section-one{
+    height:50px;
+    background-color:rgb(51, 76, 133);
+    color:rgb(216, 240, 251);
+    
+}
+
+a{
+    text-decoration: none;
+    color:rgb(216, 240, 251);
+
+}
+
+.section-two{
+    margin-top: 20px;
+    height: 300px;
+    background-color:rgba(127, 204, 255, 0);
+    display: flex;
+    flex-direction: row;
+}
+.section-three{
+    height: 200px;
+    background-color:rgba(36, 187, 106, 0);
+}
+.section-four{
+    height: 100px;
+    background-color:rgba(185, 224, 208, 0);
+}
+.section-five{
+    height: 100px;
+    background-color:rgb(51, 76, 133);
+    color:rgb(216, 240, 251);
+
+}
+
+.card-game-one{
+
+    color:white;
+    width: 150px;
+    height: 200px;
+    background:rgb(103, 137, 216);
+    margin-left: 20px;
+
+    text-align: center;
+
+}
