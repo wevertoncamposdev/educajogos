@@ -22,6 +22,7 @@ app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
 app.use('/util', express.static('util'));
 app.use('/img', express.static('img'));
+app.use('/audio', express.static('audio'));
 app.use('/', userRouter)
 
 

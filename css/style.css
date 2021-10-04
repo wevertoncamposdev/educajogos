@@ -1,149 +1,254 @@
-*{margin: 0; padding: 0; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap');
 
-.section-one{
+*{
+    margin: 0px; padding: 0px; box-sizing: border-box; font-family: 'Poppins', sans-serif;
+}
 
-    height:50px;
-    background-color:rgb(51, 76, 133);
-    color:rgb(216, 240, 251)
+/*Pagina Main --------------------------------------------------------------------------*/
+
+.navbar{
+    width: 100%;
+    color: #fff;
+    background-color: #456d96;
+    height:70px;
+}
+
+.navbar .container {
+
+    max-width: 1200px;
+    margin: 0px auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo{
+    margin-left: 10px;
+}
+
+nav{
+    display: flex; 
+}
+nav ul{
+    display: flex; 
+    margin-right: 10px;
+}
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0px 10px;
+}
+
+.navbar .login a{
+
+    
+    text-decoration: none;
+    background-color: #fff;
+    color: #456d96;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size:17px;
+    margin-right: 10px;
+
+}
+
+/*Pagina Main*/
+
+/*Pagina DEV -----------------------------------------------------------------------*/
+
+.dev-title{
+    height:80px;
+    align-items: center;
+    text-align: center;
+    margin-top:10px;
+    color: #456d96;
+}
+
+.dev-content-dev{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background: radial-gradient(circle, rgba(174, 202, 238, 0.637) 0%, rgb(74, 130, 195) 100%);
+    box-shadow: 0 0 10px rgb(143, 142, 142);
+}
+
+.dev-content-img img{
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+    margin-right: 20px;
+}
+
+/*Pagina DEV*/
+
+/*Pagina Index --------------------------------------------------------------------*/
+
+.container-cards{
+
+    
+    
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
+    
+    display:grid;
+
+    grid-template-areas:
+    "card-games card-games card-games"
+    "footer footer footer"
+    ;
+
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.container-cards a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-games img{
+    width:100%;
+    border-radius: 20px;
+}
+
+.card-games{
+
+    text-decoration: none;
+    background:radial-gradient(circle, rgba(174, 202, 238, 0.637) 0%, rgb(74, 130, 195) 100%);
+    max-width: 300px;
+    min-width: 200px;
+    height: 300px;
+
+    margin-top: 20px;
+
+    box-shadow: 0px 0px 10px rgb(131, 131, 131);
+
+}
+
+.footer{
+
+    width: auto; height:100px;
+    margin-top: 10px;
+
+    background-color: #456d96;
+    color: #fff;
     
 }
 
-#btn-check{
-    width: 200px;
-    height: 100px;
-    color:rgb(255, 255, 255);
-    background: rgb(52, 104, 172);
-    border: none;
-    text-align: center;
-    font-size: 30px;
+@media screen and (max-width: 600px){
+
+    .container-cards{
+
+        min-height: 100px;
+
+        grid-template-areas:
+        "card-games"
+        "footer "
+        ;
+
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+    .logo h1{
+        font-size:17px;
+    }
+   
 }
 
-#input-number{
-    width: 200px;
-    height: 100px;
-    color:rgb(255, 255, 255);
-    background: rgb(52, 104, 172);
-    border: none;
-    text-align: center;
-    font-size: 30px;
-}
+/*Pagina Login----------------*/
+.login-container{
 
-#input-answer{
-    width: 200px;
-    height: 100px;
-    color:rgb(255, 255, 255);
-    background: rgb(52, 104, 172);
-    border: none;
-    text-align: center;
-    font-size: 30px;
-}
-
-#label-result{
-
-    width: 200px;
-    height: 100px;
-    color:rgb(111, 206, 87);
-    border: none;
-    text-align: center;
-    font-size: 80px;
-
-}
-
-a{
-    text-decoration: none;
-    color:rgb(216, 240, 251);
-
-}
-
-.section-two{
-
-    margin-top: 50px;
-    height: 60px;
-    background-color:rgba(82, 204, 113, 0);
+    background:radial-gradient(circle, rgba(174, 202, 238, 0.637) 0%, rgb(74, 130, 195) 100%);
+    width:300px; height: 250px;
+    margin: 0 auto;
+    margin-top: 100px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
-    color: rgb(15, 40, 54);
+    box-shadow: 0px 0px 10px rgb(131, 131, 131);
+
+}
+
+.login-form input{
+
+    width: 250px;
+    margin-top: 20px;
+
+    border-radius:5px;
+    border: none;
+
+}
+.login-form button{
+
+    width: 100px;
+
+    margin-top: 10px;
+    height: 30px;
+    background:#456d96;
+
+    color: #fff;
+
+    border: none;
+    border-radius:5px;
+
+}
+
+/*Pagina Game 1 ---------------------------------------*/
+
+.game-container{
+
+    background:radial-gradient(circle, rgba(174, 202, 238, 0.637) 0%, rgb(74, 130, 195) 100%);
+    width:300px; height: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(131, 131, 131);
+    color: #fff;
+
+}
+
+.div-game input {
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    margin-top:10px;
+    background: transparent;
+    border: none;
+}
+
+.game-container button {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background:#456d96;
 }
 
 .div-result{
 
-    margin-top: 50px;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
-    
-}
-
-.section-three{
-
-    margin-top: 50px;
-    height: 300px;
-    background-color:rgba(40, 101, 141, 0);
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns:0.2fr 0.2fr 0.2fr; 
-    grid-template-rows: 1fr; 
-
-    align-items: center;
-    justify-content: center;
-
-}
-
-.section-four{
-    height: 100px;
-    background-color:rgba(185, 224, 208, 0);
-}
-
-.section-five{
-    height: 125px;
-    background-color:rgb(51, 76, 133);
-    color:rgb(216, 240, 251);
-
-}
-
-.card-game-one{
-
-    color:white;
-    width: 150px;
-    height: 200px;
-    background:rgb(103, 137, 216);
     text-align: center;
-
-}
-
-@media screen and (max-width: 768px){
-
-    .card-game-one{
-
-        color:white;
-        width: 150px;
-        height: 200px;
-        background:rgb(103, 137, 216);
-        margin-left: auto; margin-right: auto;
-        
-        margin-bottom: 10px;
-    
-    }
-
-    .section-three{
-
-        display: block;
- 
-    }
-
-    .section-four{
-        display: block;
-        height: 350px;
-        background-color:rgba(185, 224, 208, 0);
-    }
-    
-    .section-five{
-
-        
-        height: 125px;
-        background-color:rgb(51, 76, 133);
-        color:rgb(216, 240, 251);
-    
-    }
 }
