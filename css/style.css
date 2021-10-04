@@ -214,7 +214,7 @@ nav ul li a {
     background:radial-gradient(circle, rgba(174, 202, 238, 0.637) 0%, rgb(74, 130, 195) 100%);
     width:300px; height: 450px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -244,7 +244,7 @@ nav ul li a {
 
 .div-result{
 
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100px;
     height: 50px;
     margin: 0 auto;
